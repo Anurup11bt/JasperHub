@@ -1,5 +1,5 @@
  
  SELECT OBJ_ID, ATTCH_ID, ID_NUM, TITLE, TEXT_FILE,RELEVANCE() AS R, TABLE_NAME, TYPE_ID, TEXT_SRC 
  FROM strViewName 
- WHERE (TABLE_NAME CONTAINS ?) AND (TEXT_SRC CONTAINS ('strKey') |  ('strPhase'))
+ WHERE (TABLE_NAME CONTAINS strTableName) AND (TEXT_SRC CONTAINS ('strKey') |  ('strPhase'))
  ORDER BY strSortField strSortOrder;
